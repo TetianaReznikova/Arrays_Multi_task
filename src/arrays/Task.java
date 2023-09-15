@@ -25,8 +25,10 @@ public class Task {
 
         for (int[] num1 : nums) {
             for (int num2 : num1) {
-                if (enterNum == winNumber & enterNum == num2)
+                if (enterNum == winNumber & enterNum == num2) {
                     idx = 1;
+                    break;
+                }
             }
         }
         if (idx == 1) System.out.println("You are winner!!!");
